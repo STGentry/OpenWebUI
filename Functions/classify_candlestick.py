@@ -11,7 +11,7 @@ import urllib.request
 import urllib.error
 from typing import Union, Optional
 
-OLLAMA_URL = "http://192.168.10.153:11434"
+OLLAMA_URL = "<<insert ip here>>"
 
 
 class Pipe:
