@@ -6,12 +6,13 @@ required_open_webui_version: 0.4.0
 """
 
 import json
+import os
 import re
 import urllib.request
 import urllib.error
 from typing import Union, Optional
 
-OLLAMA_URL = "<<insert ip here>>"
+OLLAMA_URL = os.environ.get("OLLAMA_URL", "http://127.0.0.1:11434")
 
 
 class Pipe:
